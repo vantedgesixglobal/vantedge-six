@@ -104,4 +104,24 @@ footer {
   padding: 10px;
   outline: none;
 }
+#whatsapp-btn, #email-btn {
+  position: fixed;
+  left: 20px;
+  padding: 12px 18px;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+#whatsapp-btn {
+  bottom: 80px;
+  background: #25D366;
+}
+
+#email-btn {
+  bottom: 30px;
+  background: #0072c6;
+}
 
