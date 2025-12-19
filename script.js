@@ -63,7 +63,35 @@ input.addEventListener("keydown", (e) => {
       aiMsg.textContent =
   "VX Intelligence is active. I can route your request to Marketing, Design, Engineering, Events, Finance, or People management systems. Please specify your intent.";
 
-        "VX Intelligence is processing your request. Advanced routing will be enabled soon.";
+        const intent = detectIntent(input.value);
+
+let response = "";
+
+switch (intent) {
+  case "DESIGN":
+    response = "VX Design Intelligence activated. Brand systems, UI/UX, identity and visual strategy are now aligned.";
+    break;
+  case "ENGINEERING":
+    response = "VX Engineering Intelligence online. Scalable systems, performance architecture and secure development engaged.";
+    break;
+  case "EVENTS":
+    response = "VX Event Intelligence activated. Global virtual and hybrid event orchestration initiated.";
+    break;
+  case "MARKETING":
+    response = "VX Marketing Intelligence active. Growth, positioning and global visibility engines engaged.";
+    break;
+  case "FINANCE":
+    response = "VX Finance Intelligence online. Pricing, invoicing and payment optimization engaged.";
+    break;
+  case "PEOPLE":
+    response = "VX People Intelligence activated. Hiring, talent systems and organizational design engaged.";
+    break;
+  default:
+    response = "VX Core Intelligence active. Please specify your objective.";
+}
+
+aiMsg.textContent = response;
+
       body.appendChild(aiMsg);
       body.scrollTop = body.scrollHeight;
     }, 600);
