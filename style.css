@@ -70,11 +70,21 @@ li {
 }
 
 .vx-logo {
-  font-size: 4rem;
-  letter-spacing: 6px;
-  opacity: 0.85;
-  animation: breathe 6s ease-in-out infinite;
+  font-size: 4.2rem;
+  letter-spacing: 8px;
+  font-weight: 300;
+  opacity: 0.9;
+  background: linear-gradient(
+    120deg,
+    #ffffff,
+    #9a9a9a,
+    #ffffff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: breathe 7s ease-in-out infinite;
 }
+
 
 @keyframes breathe {
   0%, 100% { opacity: 0.6; }
