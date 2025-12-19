@@ -13,8 +13,16 @@ header {
 
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
+  background-image: linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+  ),
+  url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+  background-size: cover;
+  background-position: center;
 }
+
 
 .hero button {
   padding: 15px 30px;
@@ -36,11 +44,19 @@ header {
 }
 
 .card {
-  background: rgba(255,255,255,0.1);
+  background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
+  border: 1px solid rgba(255,215,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(255,215,0,0.3);
+}
+
 
 footer {
   background: black;
