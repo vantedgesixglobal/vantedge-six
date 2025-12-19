@@ -105,3 +105,16 @@ footer {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.6rem; }
 }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255,255,255,0.05),
+      transparent 70%
+    );
+  pointer-events: none;
+}
+
