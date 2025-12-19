@@ -57,3 +57,51 @@ footer {
   padding: 15px;
   border-radius: 15px;
 }
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 280px;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  font-size: 14px;
+}
+
+#chat-header {
+  background: #000;
+  color: gold;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#chat-body {
+  height: 200px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.bot {
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.user {
+  background: gold;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+#userInput {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
