@@ -120,4 +120,49 @@ body::before {
 .scene * {
   animation: none;
 }
+#vx-ai {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 320px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(18px);
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  color: #fff;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-header {
+  padding: 0.8rem 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.ai-body {
+  padding: 1rem;
+  flex: 1;
+}
+
+.ai-message {
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+.ai-input {
+  background: transparent;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 0.8rem 1rem;
+  color: #fff;
+  outline: none;
+}
+
+.ai-input::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+
 
