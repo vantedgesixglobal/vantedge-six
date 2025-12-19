@@ -164,5 +164,77 @@ body::before {
 .ai-input::placeholder {
   color: rgba(255,255,255,0.4);
 }
+/* =========================
+   VX — Conscious Tech Style
+   ========================= */
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #060b16, #000);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.vx-logo {
+  font-family: 'Sora', sans-serif;
+  font-size: 120px;
+  letter-spacing: 6px;
+  color: #00f0ff;
+  animation: breathe 6s ease-in-out infinite;
+}
+
+.tagline {
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.85;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 30px;
+  font-size: 14px;
+  opacity: 0.6;
+  animation: float 2.5s infinite;
+}
+
+/* SECTIONS */
+section {
+  padding: 120px 10%;
+}
+
+h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 720px;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+/* ANIMATIONS */
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.04); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
 
 
