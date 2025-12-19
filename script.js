@@ -19,6 +19,30 @@ setTimeout(() => nextScene(), 1800);
 setTimeout(() => nextScene(), 4200);
 setTimeout(() => nextScene(), 7800);
 setTimeout(() => nextScene(), 12000);
+function detectIntent(text) {
+  text = text.toLowerCase();
+
+  if (text.includes("design") || text.includes("branding") || text.includes("ui")) {
+    return "DESIGN";
+  }
+  if (text.includes("developer") || text.includes("website") || text.includes("app")) {
+    return "ENGINEERING";
+  }
+  if (text.includes("event") || text.includes("conference") || text.includes("launch")) {
+    return "EVENTS";
+  }
+  if (text.includes("marketing") || text.includes("seo") || text.includes("ads")) {
+    return "MARKETING";
+  }
+  if (text.includes("price") || text.includes("invoice") || text.includes("payment")) {
+    return "FINANCE";
+  }
+  if (text.includes("hire") || text.includes("team") || text.includes("hr")) {
+    return "PEOPLE";
+  }
+
+  return "CORE";
+}
 
 // User control
 document.addEventListener("click", nextScene);
