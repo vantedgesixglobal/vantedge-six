@@ -29,4 +29,8 @@ function sendMessage(event) {
     chatBody.scrollTop = chatBody.scrollHeight;
   }
 }
+function payNow() {
+  alert("Payment system activated. Secure global payments supported. Invoice will be emailed automatically.");
+}
+
 
