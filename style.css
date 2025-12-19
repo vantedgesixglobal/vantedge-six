@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #1c1c1c, #3a2c00);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.8);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  background: gold;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.services {
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+}
+
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+}
