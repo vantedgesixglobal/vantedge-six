@@ -46,9 +46,15 @@ function googleTranslateElementInit() {
   <p>© 2025 VantEdge Six. All Rights Reserved.</p>
 </footer>
 
-<div id="chatbot">
-  👋 Hi! I am your AI Manager. How can I help you today?
+<!-- AI Chatbot -->
+<div id="chatbot-container">
+  <div id="chat-header">AI Manager</div>
+  <div id="chat-body">
+    <div class="bot">👋 Hello! I’m your AI Business Manager. How can I help you?</div>
+  </div>
+  <input type="text" id="userInput" placeholder="Type your message..." onkeypress="sendMessage(event)">
 </div>
+
 
 <script src="script.js"></script>
 </body>
