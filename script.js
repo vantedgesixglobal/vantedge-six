@@ -37,6 +37,8 @@ input.addEventListener("keydown", (e) => {
       const aiMsg = document.createElement("p");
       aiMsg.className = "ai-message";
       aiMsg.textContent =
+  "VX Intelligence is active. I can route your request to Marketing, Design, Engineering, Events, Finance, or People management systems. Please specify your intent.";
+
         "VX Intelligence is processing your request. Advanced routing will be enabled soon.";
       body.appendChild(aiMsg);
       body.scrollTop = body.scrollHeight;
