@@ -249,6 +249,39 @@ section.show {
 }
 /* VX LOGO ANIMATION */
 .vx-logo {
+/* =========================
+   VX LOGO — CONSCIOUS MOTION
+   ========================= */
+
+.vx-logo {
+  font-family: 'Sora', sans-serif;
+  font-size: 120px;
+  letter-spacing: 6px;
+  display: flex;
+  gap: 8px;
+  animation: breathe 6s ease-in-out infinite;
+}
+
+.vx-logo .v {
+  color: #3a7bff;
+  text-shadow: 0 0 20px rgba(58,123,255,0.6);
+}
+
+.vx-logo .x {
+  color: #00f0ff;
+  text-shadow: 0 0 30px rgba(0,240,255,0.8);
+  animation: pulseX 4s ease-in-out infinite;
+}
+
+@keyframes pulseX {
+  0%, 100% {
+    opacity: 0.8;
+    text-shadow: 0 0 20px rgba(0,240,255,0.6);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 60
+
  
 
 
