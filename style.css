@@ -117,4 +117,7 @@ body::before {
     );
   pointer-events: none;
 }
+.scene * {
+  animation: none;
+}
 
